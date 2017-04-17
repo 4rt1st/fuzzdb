@@ -1,0 +1,2 @@
+# fuzzdb
+Web Application Fuzzing
